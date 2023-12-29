@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5개의 점수 등급 매기기</title>
+</head>
+<body>
+    <h2>5개의 점수 등급 매기기</h2>
+    <button onclick="assignGrades()">등급 매기기</button>
+    <hr>
+    <div id="result"></div>
+
+    <script>
+        function assignGrade(score) {
+            // 성적에 따른 등급 부여
+            if (score >= 90) {
+                return 'A';
+            } else if (score >= 80) {
+                return 'B';
+            } else if (score >= 70) {
+                return 'C';
+            } else if (score >= 60) {
+                return 'D';
+            } else {
+                return 'F';
+            }
+        }
+
+        function assignGrades() {
+            var resultDiv = document.getElementById("result");
+            var result = "";
+
+            for (var i = 1; i <= 5; i++) {
+                var score = parseFloat(prompt("점수 " + i + " 입력:"));
+
+                if (isNaN(score) || score < 0 || score > 100) {
+                    alert("올바른 점수를 입력해주세요 (0부터 100까지).");
+                    return;
+                }
+
+                var grade = assignGrade(score);
+                result += `점수 ${i}: ${score}, 등급: ${grade}<br>`;
+            }
+
+            resultDiv.innerHTML = result;
+        }
+    </script>
+</body>
+</html>
