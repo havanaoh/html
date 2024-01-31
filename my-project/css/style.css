@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* *{
+    border: 1px solid black;
+} */
+
+/* h1 {
+    border: 1px solid red;
+}
+
+h2 {
+    border: 1px solid gold;
+}
+
+h3 {
+    border: 1px solid blueviolet;
+} */
+
+h1, h2, h3 {
+    border:  1px solid silver;
+}
+p strong {
+    border:  1px solid salmon;
+}
+
+ul > li {
+    border:  1px solid brown
+}
