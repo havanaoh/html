@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+</head>
+<body>
+    <h1 id = "title">안녕</h1>
+    <button onclick="clickButton()">클릭</button>
+    <!-- <div id='title'><p>가나다라</p></div> -->
+    <script>
+        function clickButton(){
+            console.log('버튼이 클릭되었습니다.');
+            const title=document.querySelector("#title");
+            // title.textContent='<h1>반가워요</h1>';
+            title.innerHTML='<h1>반가워요</h1>';
+            console.log(title);
+        }
+
+
+
+        // title = 100;
+        // console.log(title.textContent);
+        // console.log(title.innerHTML);
+        // console.log(title.innerText);
+        // document.write('<h1>Hello world<h1>');
+        // console.log("Hello world");
+        // console.log("안녕하세요");
+    </script>
+</body>
+</html>
