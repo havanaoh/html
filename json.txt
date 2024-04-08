@@ -1,0 +1,17 @@
+PS D_devhtml_json0319 json-server --watch db.json --port 3001
+--watch-w can be omitted, JSON Server 1+ watches for file changes by default
+JSON Server started on PORT 3001
+Press CTRL-C to stop
+Watching db.json...
+
+♡⸜(˶˃ ᵕ ˂˶)⸝♡
+
+Index
+httplocalhost3001
+
+Static files
+Serving .public directory if it exists
+
+Endpoints
+httplocalhost3001todos
+
